@@ -1,0 +1,311 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\reco}[3]{
+ \begin{quote}
+    \vspace{6pt}
+    {#1}
+    \vspace{-6pt}
+ \end{quote}
+ 
+ \raggedleft{\textit{#2}}
+ \small\raggedleft{\textbf{\textit{#3}}}
+
+ 
+}
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    {\Huge \scshape Mahendra Gehlot} \\ \vspace{8pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91-7737101405 ~ \href{mailto:mahendrag@iisc.ac.in}{\raisebox{-0.2\height}\faEnvelope\ {mahendrag@iisc.ac.in}} ~ 
+    \href{mailto:connect.mge@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ {connect.mge@gmail.com}} ~
+    \href{https://www.linkedin.com/in/mahendra-gehlot}{\raisebox{-0.2\height}\faLinkedin\ {linkedin.com/in/mahendra-gehlot}}  ~ 
+    \vspace{4pt}
+    \\{\faSkype\ {live:mahendra2baori}} ~
+    
+    \vspace{-12pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Science}{August 2021 -- Current}
+      {Master of Technology in Aerospace Engineering (CGPA - 8.6/10)}{Bangalore, Karnataka}
+  \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Rajasthan Technical University}{August 2015 -- May 2019}
+      {Bachelor of Technology in Aeronautical Engineering (CGPA - 8.6/10)}{Kota, Rajasthan}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=8pt]
+                \item\small Artificial Intelligence for Medical Images
+                \item Neural Computation
+                \item Introduction to computing for AI ML
+                \item Data Analytics
+                \item Numerical Optimization
+                \item Probability and Statistics
+                \item Robot Perception
+                \item Motion Planning for Autonomous System
+                \item Mathematical Methods
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+        {Data Science Intern}{May 2022 -- July 2022}
+        {Gojek Tech}{Bengaluru, Karnataka}
+        \resumeItemListStart
+            \resumeItem{Identified the data sources, extracted relevant data using BigQuery and performed Exploratory Data Analysis (EDA) on extracted internal customer support chat and social media data.}
+            \resumeItem{Worked on Project Chit-Chat intents data set labelling of utterances (Language - Indonesian) using weak-supervision, clustering and label expansion methods.}
+            \resumeItem{Prepared the project technical documentation report and code repository and also presented to team members and other stack holders.}
+            \resumeItem{Attended and conducted sessions on Data Science Project Structuring, ML-Flow, Merlin (in-house ML Project deployment tool) Chat-bots, and got hands-on experience with Streamlit app deployment.}
+        \resumeItemListEnd
+ \resumeSubHeadingListEnd
+ 
+ \resumeSubHeadingListStart
+    \resumeSubheading
+      {Aeronautical Analyst 1}{March 2020 -- July 2021}
+      {HiTech iSolutions LLP}{Ahmadabad, Gujrat}
+      \resumeItemListStart
+        \resumeItem{Analysed Aeronautical Information Publications (AIP) of various countries to compile (the static and dynamic) critical aerodromes data and push it to databases.}
+        \resumeItem{Developed the digital maps of the Airport using the in-house tool (Opale) and with the aid of satellite images, AIP data, pre-compiled data from eAIP databases.}
+        \resumeItem{Established and Maintained the records of map features incorporation and relevant non-processed data.}
+        \resumeItem{Proposed ideas to automate the process of map creation and non-processed data management.}
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Chit-Chat intent dataset labelling with Semi-Supervised Methods} $|$ \emph{Internship Project}}{May 2022 - July 2022}
+          \resumeItemListStart
+            \resumeItem{Assessed Business-value of project, collected data from various sources and performed Exploratory Data Analysis (EDA) to get started.}
+            \resumeItem{Implemented weak-supervision based AI snorkeling functions by infusing domain knowledge to label raw-utterances.}
+            \resumeItem{Experimented with various pre-trained and in-house trained models for sentences to vector representations.The fastText based skip-gram unsupervised trained model selected as best-suited model for chit-chat intents use-case.}
+            \resumeItem{Performed clustering (K-Means, HDBSCAN) to extract remaining chit-chat intents. This step involve manual human intervention to label clusters and remove the noise.}
+            \resumeItem{Expanded the data set with application of zero-shot learning based open source package LASER (Language agnostic SEntence representation) and similarity score.}
+            \resumeItem{Prepared Project documentation,  readable gitlab repository and concluded internship with final presentation to VP Data Science, Team colleagues and Product Managers.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{{\href{https://docs.google.com/presentation/d/1m2eCLEQY4opMdOf7zU4B6Nl9uyJhqVc5EFvwn4DMvyo/edit?usp=sharing}{Fast and Accurate Object detection in High Resolution Video using GPUs}}}}{Feb 2022 - April 2022}
+          \resumeItemListStart
+            \resumeItem{Implemented attention pipeline which uses two staged evaluation of each image or video frame under rough and refined resolution to limit the total number of necessary evaluations.}
+            \resumeItem{In both stages, underlying base YOLO (you only look once) model performing fast object detection in user specified (implicitly) regions of image.}
+            \resumeItem{The Effect of parameter (horizontal splits and vertical splits) is studied thoroughly and analysed pros and cons of method and purposed improvements.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{{\href{https://github.com/mahendra-gehlot/Quadcopter-controller}{Application of Differential Flatness: Robust Control and Motion Planning}}}}{Feb 2022 - April 2022}
+          \resumeItemListStart
+            \resumeItem{Employed the concept of differential Flatness for robust command tracking of Quad-copter and demonstrated error convergence to zero with MATLAB simulation.}
+            \resumeItem{Formulated non-holonomic n-trailers problem and applied concept of Differential Flatness on simplified 2-trailers and generated visualization of motion.}
+            \resumeItem{Systematically documented the idea, the mathematical formulation of concept and simulations results as per IEEE conference paper requirements.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{Aircraft Longitudinal Dynamics Modes Simulation} $|$ \emph{B. Tech Project}}{Sep 2018 - Jan 2019}
+          \resumeItemListStart
+            \resumeItem{The aircraft non-linear equations of motion (6 Degree of freedom) are solved numerically in MATLAB.}
+            \resumeItem{The linearization of non-linear equations of motion is carried out to estimate longitudinal modes (phugoid and short-period) characteristics and compared with numerical solution.}
+            \resumeItem{The crucial parameters are processed in SIMULINK and simulated in Flight Gear.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+% ------ Certification----------
+\section{Certification}
+    \begin{multicols}{2}
+            \begin{itemize}[itemsep=-5pt, parsep=8pt]
+                \item 
+                \small
+                {\href{#}{MITx 6.86x $|$ Machine Learning with Python-From Linear Models to Deep Learning}}
+                \item
+                \small {\href{https://www.coursera.org/account/accomplishments/specialization/certificate/MG3FJTQ83TW3}{DeepLearning.AI $|$ Practical Data Science on the AWS Cloud}
+                \item {\href{https://www.coursera.org/account/accomplishments/specialization/certificate/QJ7J6XXM8LSA}{DeepLearning.AI $|$ TensorFlow Developer Professional Certification}}
+                \item
+                \small {\href{https://coursera.org/verify/MBPFPTJP5C9X}{DeepLearning.AI $|$ Neural Networks and Deep Learning}}
+                \item
+                \small {\href{https://www.coursera.org/account/accomplishments/certificate/Z857X2KPYEJV}{IBM $|$ Deep Neural Networks with PyTorch}}
+                \item {\href{https://www.coursera.org/account/accomplishments/certificate/BS6ELX9PHT7R}{IBM $|$ Databases and SQL for Data Science with Python}}
+                \item {\href{https://www.coursera.org/account/accomplishments/verify/X6T8DPKVT3JZ}{IBM $|$ Cybersecurity Compliance Framework}}
+                \item {\href{https://www.hackerrank.com/certificates/919147a692f8}{HackerRank $|$ Problem Solving (Data Structure and Algorithms)}}
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+
+%-----------Technical SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C++, SQL, LATEX} \\
+     \vspace{4pt}
+     \textbf{Packages Experience}{: PyTorch, TensorFlow, NumPy, Pandas, Regex, Sci-Kit Learn, fastText, sentence-transformers, spicy, MatplotLib, Seaborn} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+ 
+% -----------Credential---------------
+\section{Credential}
+    \begin{multicols}{2}
+            \begin{itemize}[itemsep=-5pt, parsep=8pt]
+                \item 
+                \small
+                Recommended for \textbf{Pre-Placement Offer} at Gojek during Data Science Intern (deferred offer due hiring freezing).
+                \item \textbf{Achieved {100\%}} Efficiency and Production metrics as Aeronautical Analyst 1 in Q3 and Q4 2020-21.
+                \item Secured \textbf{All India Rank 03} in GATE 2020
+                \item \textbf{Gold Medalist} of B.Tech Aeronautical Engineering (2015-2019)
+                \item \textbf{Awarded Academic Excellence Scholarships} in 2018 and 2017
+                % \item \textbf{Winner} of inter-college Badminton Tournament
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+
+%-----------Leadership---------------
+\section{Soft Skills}
+    \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=8pt]
+                \item Team Work  
+                \item Adaptability
+                \item Problem-Solving
+                \item Work Ethic
+                \item Interpersonal Skills
+                \item Time Management
+                \item Collaboration
+                \item Ownership
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+
+% %-----------Endorsement---------------
+\section{Endorsements}
+ \reco{I’ll be covering the journey of reaching 1 Million connections in another blog post as part of the Courier blog series where I’ll be sharing the challenges we faced at each step in detail and how we overcame those challenges to achieve our goal. Stay tuned for more interesting blogs and updates coming your way.}{Program Manager}{Gojek Tech}
+ \reco{Mahendra taking up innovative and challenging projects and excelling in them by his sheer diligence and perseverance. He has a good hold over theoretical concepts as well as various software. Witnessing his professional attitude throughout, I'm confident that he will do very well in his life and career and will prove to be an asset to the organization he joins.}{Project Coordinator}{RTU Kota}
+
+\end{document}
